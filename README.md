@@ -26,7 +26,7 @@ Para que el entorno no dependa de factores externos, se implementó la siguiente
 Intenté la instalación mediante las *Features* automáticas del `devcontainer.json`. Sin embargo, el motor de Codespaces arrojó un **Error 1302**, fallando al conectar con el registro externo de contenedores.
 
 ### 2. La Solución (Plan B)
-Como analista, decidí bajar un nivel y tomar el control total. Eliminé las dependencias de terceros y creé un **Dockerfile** propio. Ahora, MariaDB se instala directamente sobre la imagen base, asegurando que el software esté presente sí o sí.
+Decidí bajar un nivel y tomar el control total. Eliminé las dependencias de terceros y creé un **Dockerfile** propio. Ahora, MariaDB se instala directamente sobre la imagen base, asegurando que el software esté presente sí o sí.
 
 ### 3. Automatización del Ciclo de Vida
 Configuré el `devcontainer.json` con comandos clave para evitar tareas manuales repetitivas:
